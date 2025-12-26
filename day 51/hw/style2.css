@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background: #000;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.box {
+  background: #ff6b4a;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 140px;
+  flex: 1 1 calc(33.333% - 16px);
+}
+
+/* Large blocks */
+.big {
+  height: 300px;
+  flex: 2 1 calc(66.666% - 16px);
+}

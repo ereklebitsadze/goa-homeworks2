@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Base box style */
+.box {
+  background: #9acd32;
+  border: 6px solid #000;
+  box-sizing: border-box;
+}
+
+/* Size variations */
+.small {
+  width: 100px;
+  height: 140px;
+}
+
+.medium {
+  width: 220px;
+  height: 140px;
+}
+
+.wide {
+  width: 600px;
+  height: 140px;
+}
+
+.long {
+  width: 520px;
+  height: 140px;
+}
+
+.extra-wide {
+  width: 700px;
+  height: 140px;
+}
+
+.tall {
+  width: 100px;
+  height: 200px;
+}

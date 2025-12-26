@@ -1,0 +1,13 @@
+.panel {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+}
