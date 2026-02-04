@@ -1,0 +1,29 @@
+.color-grid {
+  display: grid;
+  /* Image 5 shows the middle column (2 & 5) is twice as wide as the outer ones */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* Two rows of equal height */
+  grid-template-rows: 200px 200px;
+  gap: 15px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  font-family: sans-serif;
+  border-radius: 4px; /* Optional slight rounding for the clean look */
+}
+
+/* Specific Colors from the Image */
+.b1 { background-color: #008471; } /* Teal */
+.b2 { background-color: #b34a3b; } /* Red-ish */
+.b3 { background-color: #a4b400; } /* Olive/Yellow */
+.b4 { background-color: #007bc4; } /* Blue */
+.b5 { background-color: #e67e00; } /* Orange */
+.b6 { background-color: #8e5cb5; } /* Purple */

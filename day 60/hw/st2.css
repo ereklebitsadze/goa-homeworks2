@@ -1,0 +1,14 @@
+.grid-v1 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 150px);
+}
+
+.item { background: #e0e7ff; display: flex; align-items: center; justify-content: center; }
+.i1, .i2, .i4, .i6, .i8 { background: #64d4c3; }
+
+/* The Spanning Logic */
+.i1 { grid-row: span 3; }      /* Item 1 takes all 3 rows */
+.i2 { grid-column: span 2; }   /* Item 2 takes 2 columns */
+.i6 { grid-row: span 2; }      /* Item 6 takes 2 rows */

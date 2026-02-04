@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 600px;
+  height: 600px;
+}
+
+.one {
+  background: aqua;
+  grid-column: span 2; 
+}
+
+.two {
+  background: blueviolet;
+  grid-row: span 2;
+}
+
+.three {
+  background: gold;
+  grid-column: span 2;
+}
+
+.four {
+  background: chartreuse;
+}
+
+.five {
+  background: chocolate;
+  grid-column: span 2;
+}

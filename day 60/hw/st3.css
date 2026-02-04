@@ -1,0 +1,21 @@
+.hero-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns for the footer */
+  grid-template-rows: auto auto auto;
+}
+
+.box { 
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  min-height: 100px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  border-radius: 4px;
+}
+
+/* Positioning */
+.hero   { grid-column: span 3; grid-row: span 2; min-height: 250px; }
+.side-1 { grid-column: span 2; background: #a1c4fd; }
+.side-2 { grid-column: span 2; background: #c2e9fb; }
+.wide   { grid-column: span 5; min-height: 80px; } /* Row 2 spanning across */

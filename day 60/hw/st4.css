@@ -1,0 +1,15 @@
+.simple-grid {
+  display: grid;
+  gap: 15px;
+  /* Defining specific widths: side columns smaller, middle column 2x bigger */
+  grid-template-columns: 1fr 2fr 1fr; 
+  grid-template-rows: 150px 200px;
+}
+
+.card { color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+.c1 { background: #00897b; }
+.c2 { background: #c0392b; }
+.c3 { background: #afb42b; }
+.c4 { background: #007bc0; }
+.c5 { background: #e67e22; }
+.c6 { background: #8e44ad; }
