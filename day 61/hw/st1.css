@@ -1,0 +1,22 @@
+.mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 80px;
+  gap: 15px;
+  background-color: #1a4550;
+  padding: 15px;
+}
+
+.item { background: white; border-radius: 4px; }
+
+.header-left { grid-column: span 4; grid-row: span 2; }
+.center-big { grid-column: span 4; grid-row: span 4; }
+.right-tall { grid-column: span 2; grid-row: span 3; }
+.right-square { grid-column: span 2; grid-row: span 2; }
+.mid-left-1 { grid-column: span 2; grid-row: span 2; }
+.mid-left-2 { grid-column: span 2; grid-row: span 2; }
+.drag-me { grid-column: span 2; grid-row: span 2; display: flex; align-items: center; justify-content: center; }
+.bot-left { grid-column: span 2; grid-row: span 2; }
+.bot-mid-1 { grid-column: span 4; grid-row: span 2; }
+.bot-mid-2 { grid-column: span 4; grid-row: span 2; }
+.bot-right { grid-column: span 2; grid-row: span 2; }

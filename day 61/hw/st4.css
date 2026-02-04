@@ -1,0 +1,15 @@
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 150px 200px 150px;
+  gap: 1px; /* To show thin borders */
+}
+
+.card { color: white; padding: 20px; }
+.h1, .h4 { background: #333; }
+.h2 { background: #42a5f5; }
+.h3 { background: #26a69a; }
+.side-l, .side-r { grid-row: span 2; background: #5c6bc0; }
+.center-top { grid-column: span 2; background: #333; }
+.center-bl { background: #42a5f5; }
+.center-br { background: #26a69a; }

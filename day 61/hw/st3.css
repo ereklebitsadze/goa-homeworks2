@@ -1,0 +1,14 @@
+.line-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 80px);
+  gap: 5px;
+}
+
+.header { grid-area: 1 / 1 / 2 / 5; background: #c5cae9; }
+.sidebar { grid-area: 2 / 1 / 5 / 2; background: #c8e6c9; }
+.title { grid-area: 2 / 2 / 3 / 5; background: #f8bbd0; }
+.article-1 { grid-area: 3 / 2 / 5 / 3; background: #f48fb1; }
+.article-2 { grid-area: 3 / 3 / 5 / 4; background: #ce93d8; }
+.article-3 { grid-area: 3 / 4 / 5 / 5; background: #bcaaa4; }
+.footer { grid-area: 5 / 1 / 6 / 5; background: #c5cae9; }

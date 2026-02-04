@@ -1,0 +1,17 @@
+.semantic-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto auto 1fr 1fr auto;
+  gap: 15px;
+}
+
+header { grid-column: span 2; background: #00bcd4; }
+nav { grid-column: span 2; background: #4caf50; }
+aside { grid-row: 3 / 5; background: #8bc34a; }
+main { background: #03a9f4; }
+section { background: #01579b; }
+footer { grid-column: span 2; background: #00bcd4; }
+
+header, nav, aside, main, section, footer {
+  padding: 40px; color: white; text-align: center; font-size: 1.5rem;
+}
