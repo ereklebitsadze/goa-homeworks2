@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+    }
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: #fff;
+    }
+    .feature {
+      text-align: center;
+    }
+
+    /* Best Sellers */
+    .products {
+      padding: 40px 20px;
+    }
+    .products h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      color: #777;
+    }
+    .product button {
+      background: #d4a373;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Plant Reference */
+    .gallery {
+      padding: 40px 20px;
+    }
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Booking */
+    .booking {
+      background: #f0e5d8;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .booking h2 {
+      margin-bottom: 20px;
+    }
+    .booking button {
+      background: #d4a373;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Interior</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Service</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bring Serenity to Your Place With Interior</h1>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🚚 Free Shipping</h3>
+    </div>
+    <div class="feature">
+      <h3>💳 Quick Payment</h3>
+    </div>
+    <div class="feature">
+      <h3>📞 24/7 Support</h3>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Best Seller Product</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Sofa">
+        <h3>Modern Sofa</h3>
+        <p>$499</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Lamp">
+        <h3>Floor Lamp</h3>
+        <p>$129</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Chair">
+        <h3>Wooden Chair</h3>
+        <p>$199</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Table">
+        <h3>Coffee Table</h3>
+        <p>$249</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Interior Plant Reference</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/300x200" alt="Living Room">
+      <img src="https://via.placeholder.com/300x200" alt="Bedroom">
+      <img src="https://via.placeholder.com/300x200" alt="Dining Room">
+      <img src="https://via.placeholder.com/300x200" alt="See All">
+    </div>
+  </section>
+
+  <section class="booking">
+    <h2>Ready for a Site Visit?</h2>
+    <button>Book Now</button>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Service</a>
+      <a href="#">Contact</a>
+    </nav>
+    <p>© 2026 Interior Design</p>
+  </footer>
+</body>
+</html>

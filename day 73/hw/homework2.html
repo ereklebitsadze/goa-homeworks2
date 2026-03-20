@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Fish on Everest</title>
+<style>
+  body { margin:0; background:#eef; }
+  .everest { width:100%; height:300px; background:linear-gradient(#ccc,#999); position:absolute; bottom:0; }
+  .fish { position:absolute; width:80px; animation:climb 8s linear infinite; }
+  @keyframes climb {
+    0% { left:20px; bottom:0; }
+    100% { left:50%; bottom:250px; }
+  }
+</style>
+</head>
+<body>
+  <div class="everest"></div>
+  <img src="https://via.placeholder.com/80x40?text=Fish" class="fish">
+</body>
+</html>
