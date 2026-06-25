@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The USB Superposition Paradox</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            background: #161b22;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 380px;
+            border: 1px solid #30363d;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #8b949e;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .usb-icon {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            transition: transform 0.4s ease;
+        }
+        .flip {
+            transform: rotateX(180deg);
+        }
+        button {
+            background-color: #238636;
+            color: #ffffff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 1.5rem;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #2ea043;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="usb-icon" id="usb">🔌</div>
+        <h1>The 3-Try Rule</h1>
+        <p id="status-text">You attempt to plug in the USB drive. It doesn't fit. You look at it, question your spatial awareness, and prepare to flip it.</p>
+        
+        <button id="action-btn" onclick="nextAttempt()">Flip USB (Attempt 1/3)</button>
+    </div>
+
+    <script>
+        let step = 1;
+        const text = document.getElementById('status-text');
+        const btn = document.getElementById('action-btn');
+        const usb = document.getElementById('usb');
+
+        function nextAttempt() {
+            usb.classList.toggle('flip');
+            
+            if (step === 1) {
+                text.innerText = "You flipped it. You push it in. Shockingly, it STILL doesn't fit. The laws of quantum mechanics are actively working against you.";
+                btn.innerText = "Flip back (Attempt 2/3)";
+                step = 2;
+            } else if (step === 2) {
+                text.innerText = "You flip it back to the ORIGINAL orientation. You slide it in gently. It fits perfectly. Magic? Science? No, just standard USB physics.";
+                btn.innerText = "Task Successful. Reset Reality.";
+                btn.style.backgroundColor = "#58a6ff";
+                step = 3;
+            } else {
+                text.innerText = "You attempt to plug in the USB drive. It doesn't fit. You look at it, question your spatial awareness, and prepare to flip it.";
+                btn.innerText = "Flip USB (Attempt 1/3)";
+                btn.style.backgroundColor = "#238636";
+                step = 1;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <img id="mj-photo" src="https://images.unsplash.com/photo-1563306406-e66174fa3787?w=300" alt="Michael Jackson" style="cursor: pointer;">
+<p id="songs-list"></p>
+
+<script>
+document.getElementById('mj-photo').addEventListener('click', function() {
+    const paragraph = document.getElementById('songs-list');
+    paragraph.innerHTML = "1. Billie Jean<br>2. Thriller<br>3. Beat It";
+});
+
+
+
+
+
+
+</script>
+</body>
+</html>

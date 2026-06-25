@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function greet(name) {
+            return `Hello, ${name}!`;
+        }
+
+        // შემოწმება:
+        console.log(greet("გიორგი")); // დაიბეჭდება: Hello, გიორგი!
+
+        function addNumbers(a, b) {
+            return a + b;
+        }
+
+        // შემოწმება:
+        console.log(addNumbers(15, 25)); // დაიბეჭდება: 40
+
+        function sumNumbers(numbersList) {
+            let sum = 0; // საწყისი ჯამი
+
+            for (let i = 0; i < numbersList.length; i++) {
+                sum += numbersList[i]; // თითოეული რიცხვის დამატება
+            }
+
+            return sum;
+        }
+
+        // შემოწმება:
+        const myNumbers = [5, 10, 15, 20];
+        console.log(sumNumbers(myNumbers)); // დაიბეჭდება: 50
+
+
+
+        function square(number) {
+            return number * number;
+        }
+
+        // შემოწმება:
+        console.log(square(6)); // დაიბეჭდება: 36
+
+        function checkAccess(age) {
+            if (age >= 18) {
+                return "Access granted";
+            } else {
+                return "Access Denied";
+            }
+        }
+
+        // შემოწმება:
+        console.log(checkAccess(20)); // დაიბეჭდება: Access granted
+        console.log(checkAccess(16)); // დაიბეჭდება: Access Denied
+    </script>
+</body>
+
+</html>
