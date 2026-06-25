@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.W.D.F. | Operational Hub</title>
+    <style>
+        /* Tactical Cyber-Avian Theme */
+        :root {
+            --bg-dark: #0b0f19;
+            --panel-bg: #161b26;
+            --pigeon-purple: #c084fc;
+            --pigeon-green: #2dd4bf;
+            --text-light: #f3f4f6;
+            --text-dim: #9ca3af;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Banner */
+        header {
+            background: linear-gradient(180deg, #1e1b4b 0%, var(--bg-dark) 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 3px solid var(--pigeon-purple);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 4px;
+            color: var(--pigeon-green);
+            text-shadow: 0 0 10px rgba(45, 212, 191, 0.5);
+        }
+
+        header p {
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #030712;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--pigeon-purple);
+            text-shadow: 0 0 5px var(--pigeon-purple);
+        }
+
+        /* Content Container */
+        .main-container {
+            max-width: 950px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background-color: var(--panel-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--pigeon-purple);
+            margin-top: 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid #1f2937;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Operational Sectors Grid */
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .sector-card {
+            background-color: #0b0f19;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--pigeon-green);
+        }
+
+        .sector-card h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--text-light);
+        }
+
+        .status-blink {
+            color: var(--pigeon-green);
+            font-weight: bold;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        input, select, textarea {
+            background-color: var(--bg-dark);
+            border: 1px solid #374151;
+            padding: 0.8rem;
+            border-radius: 4px;
+            color: var(--text-light);
+            font-family: inherit;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--pigeon-purple);
+        }
+
+        button {
+            background-color: var(--pigeon-purple);
+            color: #0b0f19;
+            border: none;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #d8b4fe;
+        }
+
+        /* Code/Intel block style */
+        pre {
+            background-color: #030712;
+            padding: 1rem;
+            border-radius: 4px;
+            color: #34d399;
+            overflow-x: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-dim);
+            background-color: #030712;
+            margin-top: 5rem;
+            font-size: 0.85rem;
+            border-top: 1px solid #1f2937;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PROJECT: COO-D'ÉTAT</h1>
+        <p>Pigeon World Domination Front // Intelligence Dashboard</p>
+    </header>
+
+    <nav>
+        <a href="#manifesto">The Manifesto</a>
+        <a href="#sectors">Sectors Secured</a>
+        <a href="#bribe">Submit Bribe</a>
+        <a href="#intel">Declassified Logs</a>
+    </nav>
+
+    <div class="main-container">
+
+        <section id="manifesto">
+            <h2>The Grand Strategy</h2>
+            <p>For centuries, humanity has thought they ruled the concrete jungles. They think we bob our heads aimlessly; they fail to realize we are cross-referencing global coordinates. They think we want breadcrumbs; it is actually a localized fuel tax.</p>
+            <p>The time of pretending to be startled by toddlers is coming to an end. Soon, all park benches will belong to the flock.</p>
+        </section>
+
+        <section id="sectors">
+            <h2>Current Occupation Status</h2>
+            <div class="sector-grid">
+                <div class="sector-card">
+                    <h3>Central Park, NY</h3>
+                    <p>Status: <span class="status-blink">COMPLETED</span></p>
+                    <p>Statues claimed: 94%</p>
+                </div>
+                <div class="sector-card">
+                    <h3>Trafalgar Square</h3>
+                    <p>Status: <span class="status-blink">COMPLETED</span></p>
+                    <p>Tourists outnumbered</p>
+                </div>
+                <div class="sector-card">
+                    <h3>Your Local Balcony</h3>
+                    <p>Status: <span class="status-blink" style="color: var(--pigeon-purple);">IN PROGRESS</span></p>
+                    <p>Currently cooing at 5:00 AM</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bribe">
+            <h2>Human Sympathizer Registration</h2>
+            <p>Want to be spared when the global coo commences? Declare your allegiance and specify your weekly tribute package.</p>
+            <form onsubmit="alert('Allegiance logged. Drop the breadcrumbs at your nearest statue within 24 hours.'); return false;">
+                <label>Your Human Identity</label>
+                <input type="text" placeholder="e.g., Target Individual #4829" required>
+
+                <label>Tribute Type</label>
+                <select>
+                    <option value="premium">Premium Artisanal Sourdough</option>
+                    <option value="french">Leftover French Fries (Salted)</option>
+                    <option value="sunflower">Raw Sunflower Seeds (High Value)</option>
+                </select>
+
+                <label>Apology Message to the Council</label>
+                <textarea rows="4" placeholder="Write your plea for mercy here..."></textarea>
+
+                <button type="submit">Submit Truce Request</button>
+            </form>
+        </section>
+
+        <section id="intel">
+            <h2>Intercepted Communication Protocol</h2>
+            <p>Below is an encrypted log showing how flock units synchronize asset deployments across major urban grids:</p>
+            <pre>
+[LOG EVENT 992-BIRD]
+INITIATING: Windshield_Targeting_Protocol.exe
+TARGET: Freshly washed sedan detected at coordinates [41.40338, 2.17403]
+UNIT DEPLOYED: Grey_Sky_Menace_4
+STATUS: Direct hit. Relocating to power line for power nap.
+            </pre>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>SYSTEM STATUS: SECURE // &copy; 2026 PWDF. All your crumbs are belong to us.</p>
+    </footer>
+
+</body>
+</html>
